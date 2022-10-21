@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<AssemblyName>TcHmi_PostgreSQL</AssemblyName>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Company>BLT Consulting</Company>
+		<Description>TcHmi Server Extension for interacting with PostgreSQL Database</Description>
+		<Copyright>Copyright © Brent Lekx-Toniolo</Copyright>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TcHmiExtensionTypes>{165402F8-2FAD-480A-BCE3-D718A6135931}</TcHmiExtensionTypes>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TcHmiServerApiVersionNumberMajor>1</TcHmiServerApiVersionNumberMajor>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TcHmiInstallDir>$(registry:HKEY_CURRENT_USER\Software\Beckhoff\TwinCAT3\3.1@InstallDir)</TcHmiInstallDir>
+		<TcHmiInstallDir Condition="'$(TcHmiInstallDir)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Beckhoff\TwinCAT3\3.1@InstallDir)</TcHmiInstallDir>
+		<TcHmiInstallDir Condition="'$(TcHmiInstallDir)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Wow6432Node\Beckhoff\TwinCAT3\3.1@InstallDir)</TcHmiInstallDir>
+		<TcHmiEgineeringDir>$(TcHmiInstallDir)..\Functions\TE2000-HMI-Engineering</TcHmiEgineeringDir>
+		<TcHmiMsBuildPath Condition="'$(TcHmiMsBuildPath)' == ''">$(TcHmiEgineeringDir)\MSBuild\</TcHmiMsBuildPath>
+	</PropertyGroup>
+
+	<Import Project="$(TWINCAT3DIR)..\Functions\TE2000-HMI-Engineering\Infrastructure\TcHmiServer\imports\TcHmiServerExtensionCSharp.proj" />
+
+	<PropertyGroup>
+		<DefaultItemExcludes>$(DefaultItemExcludes);___initialBuild_of_this_extension.tmp</DefaultItemExcludes>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<ProjectGuid>a4eb6faa-95b3-4040-ae2f-922fa9c4eed1</ProjectGuid>
+		<Version>0.0.1.1</Version>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageIconUrl />
+		<AssemblyVersion>0.0.1.1</AssemblyVersion>
+		<FileVersion>0.0.1.1</FileVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Npgsql" Version="6.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Images\logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>

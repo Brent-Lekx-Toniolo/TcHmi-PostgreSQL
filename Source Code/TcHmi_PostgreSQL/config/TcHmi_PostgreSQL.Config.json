@@ -1,0 +1,161 @@
+﻿{
+  "$schema": "ExtensionSettings.Schema.json",
+  "guid": "0542e480-5ef4-401b-a478-ce0f2b61cd1e",
+  "version": "0.2022.9.30",
+  "configVersion": "0.2022.9.35",
+  "policies": [
+    "StrictPropertyValidation"
+  ],
+  "symbols": {
+    "CONNECT": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      }
+    },
+    "READ": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      }
+    },
+    "WRITE": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      }
+    },
+    "CLOSE": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      }
+    },
+    "getCONNECTED": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/Boolean"
+          }
+        ]
+      }
+    },
+    "getQUERY": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      }
+    },
+    "setQUERY": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      },
+      "writeValue": {
+        "type": "string"
+      }
+    },
+    "getCOMMAND": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      }
+    },
+    "setCOMMAND": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false,
+      "readValue": {
+        "allOf": [
+          {
+            "function": true
+          },
+          {
+            "$ref": "tchmi:general#/definitions/String"
+          }
+        ]
+      },
+      "writeValue": {
+        "type": "string"
+      }
+    }
+  }
+}

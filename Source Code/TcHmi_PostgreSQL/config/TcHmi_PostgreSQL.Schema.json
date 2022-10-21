@@ -1,0 +1,59 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+
+    "AddrServer": {
+      "type": "string",
+      "default": "localhost"
+    },
+
+    "Port": {
+      "type": "string",
+      "default": "5432"
+    },
+
+    "DB": {
+      "type": "string",
+      "default": "postgres"
+    },
+
+    "username": {
+      "type": "string",
+      "default": "postgres"
+
+    },
+
+    "userpassword": {
+      "type": "string",
+      "default": "Password1"
+
+    },
+    "DB_OP1": {
+      "type": "string",
+      "default": ""
+
+    },
+    "DB_OP2": {
+      "type": "string",
+      "default": ""
+    },
+    "DB_OP3": {
+      "type": "string",
+      "default": ""
+
+    },
+    "DB_OP4": {
+      "type": "string",
+      "default": ""
+
+    },
+    "DB_OP5": {
+      "type": "string",
+      "default": ""
+
+    }
+
+
+  }
+ }

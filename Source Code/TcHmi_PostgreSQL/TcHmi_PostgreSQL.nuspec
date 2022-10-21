@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>TcHmi_PostgreSQL</id>
+    <version>0.0.1.1</version>
+    <title>$TcHmi Simple PostgreSQL Server Extension$</title>
+    <authors>Brent Lekx-Toniolo</authors>
+    <owners>BLT Consulting</owners>
+    <projectUrl>https://github.com/Brent-Lekx-Toniolo/TcHmi-PostgreSQL</projectUrl>
+    <license type="file">LICENSE.txt</license>
+    <icon>images/logo.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Simple TcHmi Server Extension example for interacting with a PostgreSQL database</description>
+    <releaseNotes>Alpha Release</releaseNotes>
+    <copyright>Copyright 2022</copyright>
+    <tags>TwinCAT HMI Server Extension, TcHmi, PostgreSQL, Database</tags>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Npgsql" version="6.0.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!--
+    target := win-x64, win-x86, etc.
+    -->
+    <file src="LICENSE.txt" target="" />
+    <file src="bin\Debug\**\TcHmi_PostgreSQL.dll" target="runtimes\any\native\"/>
+    <file src="bin\Debug\**\TcHmi_PostgreSQL.*.json" target="runtimes\any\native\"/>
+    <file src="bin\Debug\**\Npgsql.dll" target="runtimes\any\native\"/>
+
+	  <file src="images\logo.png" target="images\" />
+  </files>
+</package>
