@@ -28,32 +28,7 @@
       "type": "string",
       "default": "Password1"
 
-    },
-    "DB_OP1": {
-      "type": "string",
-      "default": ""
-
-    },
-    "DB_OP2": {
-      "type": "string",
-      "default": ""
-    },
-    "DB_OP3": {
-      "type": "string",
-      "default": ""
-
-    },
-    "DB_OP4": {
-      "type": "string",
-      "default": ""
-
-    },
-    "DB_OP5": {
-      "type": "string",
-      "default": ""
-
     }
-
 
   }
  }
