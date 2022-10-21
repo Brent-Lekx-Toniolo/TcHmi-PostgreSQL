@@ -204,7 +204,7 @@ namespace TcHmi_PostgreSQL
                 }
                 else
                 {
-                    command.ReadValue = "INSERT string null, either set WRITE symbol upon trigger or use setINSERT method before triggering WRITE";
+                    command.ReadValue = "COMMAND string null, either set WRITE symbol upon trigger or use setCOMMAND method before triggering WRITE";
                 }
             }
             else
