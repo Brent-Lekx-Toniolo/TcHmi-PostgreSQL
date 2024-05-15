@@ -31,7 +31,7 @@ SOFTWARE.
 Dependancy package(s) license notice(s):
 Npgsql
 ----------------------------------------------------
-Copyright (c) 2002-2021, Npgsql
+Copyright (c) 2002-2024, Npgsql
 
 Permission to use, copy, modify, and distribute this software and its
 documentation for any purpose, without fee, and without a written agreement

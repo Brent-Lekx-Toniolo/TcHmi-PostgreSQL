@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TcHmi_PostgreSQL</id>
-    <version>0.0.1.1</version>
+    <version>0.0.1.2</version>
     <title>$TcHmi Simple PostgreSQL Server Extension$</title>
     <authors>Brent Lekx-Toniolo</authors>
     <owners>BLT Consulting</owners>
@@ -12,11 +12,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A Simple TcHmi Server Extension example for interacting with a PostgreSQL database</description>
     <releaseNotes>Alpha Release</releaseNotes>
-    <copyright>Copyright 2022</copyright>
+    <copyright>Copyright 2024</copyright>
     <tags>TwinCAT HMI Server Extension, TcHmi, PostgreSQL, Database</tags>
     <dependencies>
       <group targetFramework="net5.0">
-        <dependency id="Npgsql" version="6.0.4" exclude="Build,Analyzers" />
+        <dependency id="Npgsql" version="6.0.11" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>

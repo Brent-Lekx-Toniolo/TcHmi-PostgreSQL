@@ -4,7 +4,7 @@ This package license notice:
 TcHmi_PostgreSQL
 -------------------------------------------
 The MIT License (MIT)
-Copyright (c) 2022 Brent Lekx-Toniolo
+Copyright (c) 2022-2024 Brent Lekx-Toniolo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +31,7 @@ SOFTWARE.
 Dependancy package(s) license notice(s):
 Npgsql
 ----------------------------------------------------
-Copyright (c) 2002-2021, Npgsql
+Copyright (c) 2002-2024, Npgsql
 
 Permission to use, copy, modify, and distribute this software and its
 documentation for any purpose, without fee, and without a written agreement
